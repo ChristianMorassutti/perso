@@ -100,6 +100,7 @@
 		.bee-row-29 .bee-col-3 .bee-block-5 a,
 		.bee-row-5 .bee-col-1 .bee-block-2 a,
 		.bee-row-5 .bee-col-1 .bee-block-3 a,
+		.bee-row-5 .bee-col-1 .bee-block-4 a,
 		.bee-row-8 .bee-col-1 .bee-block-2 a,
 		.bee-row-8 .bee-col-2 .bee-block-1 a,
 		.bee-row-8 .bee-col-2 .bee-block-2 a,
@@ -230,11 +231,10 @@
 		}
 
 		.bee-row-1 {
-			background-color: #000;
+			background-color: #060000;
 			background-repeat: no-repeat
 		}
 
-		.bee-row-28,
 		.bee-row-3,
 		.bee-row-5,
 		.bee-row-9 {
@@ -342,7 +342,8 @@
 			background-repeat: no-repeat
 		}
 
-		.bee-row-5 .bee-col-1 .bee-block-2 {
+		.bee-row-5 .bee-col-1 .bee-block-2,
+		.bee-row-5 .bee-col-1 .bee-block-3 {
 			padding: 5px 60px 30px
 		}
 
@@ -369,7 +370,7 @@
 		.bee-row-26 .bee-col-2 .bee-block-2,
 		.bee-row-26 .bee-col-2 .bee-block-3,
 		.bee-row-26 .bee-col-2 .bee-block-4,
-		.bee-row-5 .bee-col-1 .bee-block-3,
+		.bee-row-5 .bee-col-1 .bee-block-4,
 		.bee-row-8 .bee-col-1 .bee-block-2,
 		.bee-row-8 .bee-col-2 .bee-block-1,
 		.bee-row-8 .bee-col-2 .bee-block-2,
@@ -389,6 +390,7 @@
 		.bee-row-24,
 		.bee-row-26,
 		.bee-row-27,
+		.bee-row-28,
 		.bee-row-6,
 		.bee-row-8 {
 			background-color: #1c1c1c;
@@ -489,6 +491,7 @@
 		.bee-row-27 .bee-col-1 .bee-block-1,
 		.bee-row-5 .bee-col-1 .bee-block-2,
 		.bee-row-5 .bee-col-1 .bee-block-3,
+		.bee-row-5 .bee-col-1 .bee-block-4,
 		.bee-row-9 .bee-col-1 .bee-block-1 {
 			color: #fff;
 			direction: ltr;
@@ -500,8 +503,31 @@
 			text-align: left
 		}
 
+		.bee-row-29 .bee-col-3 .bee-block-5 p:not(:last-child),
+		.bee-row-5 .bee-col-1 .bee-block-2 p:not(:last-child),
 		.bee-row-5 .bee-col-1 .bee-block-3 p:not(:last-child) {
+			margin-bottom: 0
+		}
+
+		.bee-row-5 .bee-col-1 .bee-block-4 p:not(:last-child) {
 			margin-bottom: 12px
+		}
+
+		.bee-row-11 .bee-col-1 .bee-block-2,
+		.bee-row-14 .bee-col-1 .bee-block-2,
+		.bee-row-17 .bee-col-1 .bee-block-2,
+		.bee-row-20 .bee-col-1 .bee-block-2,
+		.bee-row-23 .bee-col-1 .bee-block-2,
+		.bee-row-26 .bee-col-1 .bee-block-2,
+		.bee-row-8 .bee-col-1 .bee-block-2 {
+			color: #fff;
+			direction: ltr;
+			font-family: Oxygen, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+			font-size: 24px;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 150%;
+			text-align: center
 		}
 
 		.bee-row-11 .bee-col-1 .bee-block-2 p:not(:last-child),
@@ -581,28 +607,6 @@
 			letter-spacing: 0;
 			line-height: 150%;
 			text-align: left
-		}
-
-		.bee-row-11 .bee-col-1 .bee-block-2,
-		.bee-row-14 .bee-col-1 .bee-block-2,
-		.bee-row-17 .bee-col-1 .bee-block-2,
-		.bee-row-20 .bee-col-1 .bee-block-2,
-		.bee-row-23 .bee-col-1 .bee-block-2,
-		.bee-row-26 .bee-col-1 .bee-block-2,
-		.bee-row-8 .bee-col-1 .bee-block-2 {
-			color: #fff;
-			direction: ltr;
-			font-family: Oxygen, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-			font-size: 24px;
-			font-weight: 400;
-			letter-spacing: 0;
-			line-height: 150%;
-			text-align: center
-		}
-
-		.bee-row-29 .bee-col-3 .bee-block-5 p:not(:last-child),
-		.bee-row-5 .bee-col-1 .bee-block-2 p:not(:last-child) {
-			margin-bottom: 0
 		}
 
 		.bee-row-29 .bee-col-3 .bee-block-5 {
@@ -713,6 +717,23 @@
 				transform: translate(-50%, -50%) scaleY(1)
 			}
 
+			.bee-row-1 .bee-col-1 .bee-block-1 {
+				padding: 5px 5px 5px 0 !important
+			}
+
+			.bee-row-5 .bee-col-1 .bee-block-2,
+			.bee-row-5 .bee-col-1 .bee-block-3 {
+				padding: 20px 15px 5px !important;
+				text-align: center !important;
+				font-size: 16px !important
+			}
+
+			.bee-row-5 .bee-col-1 .bee-block-4 {
+				padding: 20px 20px 10px !important;
+				text-align: left !important;
+				font-size: 16px !important
+			}
+
 			.bee-row-10 .bee-col-1 .bee-block-2,
 			.bee-row-13 .bee-col-1 .bee-block-2,
 			.bee-row-16 .bee-col-1 .bee-block-2,
@@ -731,8 +752,45 @@
 				font-size: 19px !important
 			}
 
-			.bee-row-5 .bee-col-1 .bee-block-3 {
-				padding: 20px 20px 10px !important;
+			.bee-row-11 .bee-col-1 .bee-block-2,
+			.bee-row-14 .bee-col-1 .bee-block-2,
+			.bee-row-17 .bee-col-1 .bee-block-2,
+			.bee-row-20 .bee-col-1 .bee-block-2,
+			.bee-row-23 .bee-col-1 .bee-block-2,
+			.bee-row-26 .bee-col-1 .bee-block-2,
+			.bee-row-8 .bee-col-1 .bee-block-2 {
+				padding: 20px 15px 5px !important;
+				text-align: left !important;
+				font-size: 16px !important
+			}
+
+			.bee-row-11 .bee-col-2 .bee-block-1,
+			.bee-row-11 .bee-col-2 .bee-block-2,
+			.bee-row-11 .bee-col-2 .bee-block-3,
+			.bee-row-11 .bee-col-2 .bee-block-4,
+			.bee-row-14 .bee-col-2 .bee-block-1,
+			.bee-row-14 .bee-col-2 .bee-block-2,
+			.bee-row-14 .bee-col-2 .bee-block-3,
+			.bee-row-14 .bee-col-2 .bee-block-4,
+			.bee-row-17 .bee-col-2 .bee-block-1,
+			.bee-row-17 .bee-col-2 .bee-block-2,
+			.bee-row-17 .bee-col-2 .bee-block-3,
+			.bee-row-20 .bee-col-2 .bee-block-1,
+			.bee-row-20 .bee-col-2 .bee-block-2,
+			.bee-row-20 .bee-col-2 .bee-block-3,
+			.bee-row-20 .bee-col-2 .bee-block-4,
+			.bee-row-20 .bee-col-2 .bee-block-5,
+			.bee-row-23 .bee-col-2 .bee-block-1,
+			.bee-row-23 .bee-col-2 .bee-block-2,
+			.bee-row-23 .bee-col-2 .bee-block-3,
+			.bee-row-26 .bee-col-2 .bee-block-1,
+			.bee-row-26 .bee-col-2 .bee-block-2,
+			.bee-row-26 .bee-col-2 .bee-block-3,
+			.bee-row-26 .bee-col-2 .bee-block-4,
+			.bee-row-8 .bee-col-2 .bee-block-1,
+			.bee-row-8 .bee-col-2 .bee-block-2,
+			.bee-row-8 .bee-col-2 .bee-block-3 {
+				padding: 5px 15px !important;
 				text-align: left !important;
 				font-size: 16px !important
 			}
@@ -745,60 +803,6 @@
 			.bee-row-27 .bee-col-1 .bee-block-1,
 			.bee-row-9 .bee-col-1 .bee-block-1 {
 				padding: 5px 15px 10px !important;
-				text-align: left !important;
-				font-size: 16px !important
-			}
-
-			.bee-row-11 .bee-col-2 .bee-block-3,
-			.bee-row-11 .bee-col-2 .bee-block-4,
-			.bee-row-14 .bee-col-2 .bee-block-3,
-			.bee-row-14 .bee-col-2 .bee-block-4,
-			.bee-row-17 .bee-col-2 .bee-block-2,
-			.bee-row-17 .bee-col-2 .bee-block-3,
-			.bee-row-20 .bee-col-2 .bee-block-2,
-			.bee-row-20 .bee-col-2 .bee-block-3,
-			.bee-row-20 .bee-col-2 .bee-block-5,
-			.bee-row-23 .bee-col-2 .bee-block-2,
-			.bee-row-23 .bee-col-2 .bee-block-3,
-			.bee-row-26 .bee-col-2 .bee-block-2,
-			.bee-row-26 .bee-col-2 .bee-block-3,
-			.bee-row-26 .bee-col-2 .bee-block-4,
-			.bee-row-8 .bee-col-2 .bee-block-1,
-			.bee-row-8 .bee-col-2 .bee-block-2,
-			.bee-row-8 .bee-col-2 .bee-block-3 {
-				padding: 5px 15px !important;
-				text-align: left !important;
-				font-size: 16px !important
-			}
-
-			.bee-row-11 .bee-col-1 .bee-block-2,
-			.bee-row-14 .bee-col-1 .bee-block-2,
-			.bee-row-17 .bee-col-1 .bee-block-2,
-			.bee-row-20 .bee-col-1 .bee-block-2,
-			.bee-row-20 .bee-col-2 .bee-block-4,
-			.bee-row-23 .bee-col-1 .bee-block-2,
-			.bee-row-26 .bee-col-1 .bee-block-2,
-			.bee-row-8 .bee-col-1 .bee-block-2 {
-				padding: 20px 15px 5px !important;
-				text-align: left !important;
-				font-size: 16px !important
-			}
-
-			.bee-row-5 .bee-col-1 .bee-block-2 {
-				padding: 20px 15px 5px !important;
-				text-align: center !important;
-				font-size: 16px !important
-			}
-
-			.bee-row-11 .bee-col-2 .bee-block-1,
-			.bee-row-11 .bee-col-2 .bee-block-2,
-			.bee-row-14 .bee-col-2 .bee-block-1,
-			.bee-row-14 .bee-col-2 .bee-block-2,
-			.bee-row-17 .bee-col-2 .bee-block-1,
-			.bee-row-20 .bee-col-2 .bee-block-1,
-			.bee-row-23 .bee-col-2 .bee-block-1,
-			.bee-row-26 .bee-col-2 .bee-block-1 {
-				padding: 10px 15px 5px !important;
 				text-align: left !important;
 				font-size: 16px !important
 			}
@@ -857,7 +861,7 @@
 						<h1 style="color:#060000;direction:ltr;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:53px;font-weight:700;letter-spacing:4px;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">SERVICES</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-divider bee-mobile_hide">
-						<div class="center bee-separator" style="border-top:1px solid #000000;width:5%;"></div>
+						<div class="center bee-separator" style="border-top:1px solid #060000;width:5%;"></div>
 					</div>
 					<div class="bee-block bee-block-4 bee-spacer bee-mobile_hide">
 						<div class="spacer" style="height:100px;"></div>
@@ -888,9 +892,15 @@
 						<div class="spacer" style="height:50px;"></div>
 					</div>
 					<div class="bee-block bee-block-2 bee-paragraph">
-						<p>Ahhh the creation process, where to start what to consider, how much and how long!!!!????</p>
+						<p>Services I provide to my clients primarily relate to the creation of websites and the ongoing maintenance they require to stay competitive.</p>
+						<p>When starting from scratch or revisiting an existing website, the process relies heavily on the clarification of goals and the timelines if applicable.</p>
+						<p>This approach gets modified as per the needs of the website or marketing campaign.</p>
+						<p>Below is my outline for the website creation process.</p>
 					</div>
 					<div class="bee-block bee-block-3 bee-paragraph">
+						<p>Ahhh the website creation process, where to start, what to consider, how much and how long!!!!????</p>
+					</div>
+					<div class="bee-block bee-block-4 bee-paragraph">
 						<p>I find the easiest approach to web development is a 7 step approach;</p>
 						<p><span style="background-color: #ffffff; color: #000000;"> Step 1. </span>  Gathering Information: Purpose, Main Goals, and Target Audience</p>
 						<p><span style="color: #000000; background-color: #ffffff;"> Step 2. </span>  Planning: Sitemap and Wireframe Creation</p>
@@ -900,7 +910,7 @@
 						<p><span style="color: #000000; background-color: #ffffff;"> Step 6. </span>  Testing, Review, and Launch</p>
 						<p><span style="color: #000000; background-color: #ffffff;"> Step 7. </span>  Maintenance: Opinion Monitoring and Regular Updating</p>
 					</div>
-					<div class="bee-block bee-block-4 bee-spacer bee-mobile_hide">
+					<div class="bee-block bee-block-5 bee-spacer bee-mobile_hide">
 						<div class="spacer" style="height:50px;"></div>
 					</div>
 				</div>
@@ -954,7 +964,10 @@
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
 					<div class="bee-block bee-block-1 bee-paragraph">
-						<p>Hey there! To make sure we create the perfect website for you, it's super important that we get a clear understanding of what you want to achieve with it. Who do you want to attract to your site and what are your main goals? This will help us define the scope of the project and figure out all the important details, like which features you need, how long it'll take, and what the budget is. Let's work together to make your website amazing!</p>
+						<p>To make sure we create the perfect website for you, it's super important that we get a clear understanding of what you want to achieve with it.</p>
+						<p>Who do you want to attract to your site and what are your main goals?</p>
+						<p>This will help us define the scope of the project and figure out all the important details, like which features you need, how long it'll take, and what the budget is.</p>
+						<p>Let's work together to make your website amazing!</p>
 					</div>
 				</div>
 			</div>
@@ -1001,7 +1014,9 @@
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
 					<div class="bee-block bee-block-1 bee-paragraph">
-						<p>Hey, let me break this down for you! The developer works hard to create data that gives you a sneak peek into what your website will look like. The sitemap is like a map that shows how all the different parts of your website are connected. And a wireframe is like a blueprint that helps us plan out the user interface design without getting bogged down by colors and logos just yet. We're excited to work together and bring your vision to life!</p>
+						<p>The developer works hard to create data that gives you a sneak peek into what your website will look like.</p>
+						<p>The sitemap is like a map that shows how all the different parts of your website are connected.</p>
+						<p>A wireframe is like a blueprint that helps us plan out the user interface design without getting bogged down by colors and logos just yet.</p>
 					</div>
 				</div>
 			</div>
@@ -1048,7 +1063,8 @@
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
 					<div class="bee-block bee-block-1 bee-paragraph">
-						<p>Great news! We're at the stage where we get to add all the fun visual content to your website, like images, photos, and videos. Our talented designer will create a website layout that showcases your content in the best way possible. The layout is like a visual blueprint that represents the information structure and basic functionality of your website. We'll use colors, logos, and images to give you a sneak peek of what your website will look like. We're excited to make your website look amazing!</p>
+						<p>Great news! We're at the stage where we get to add all the fun visual content to your website, like images, photos, and videos.</p>
+						<p>My talented designer will create a website layout that showcases your content in the best way possible. The layout is like a visual blueprint that represents the information structure and basic functionality of your website. We'll use colors, logos, and images to give you a sneak peek of what your website will look like.</p>
 					</div>
 				</div>
 			</div>
@@ -1092,7 +1108,7 @@
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
 					<div class="bee-block bee-block-1 bee-paragraph">
-						<p>Time to make your website really shine! We need to capture the essence of what you want to say to your target audience and encourage them to take action with clear call-to-actions. Our content writing process includes crafting catchy headlines, writing new text, and proofreading to make sure everything is perfect. To make things even smoother, it's best to have all the content ready before or during the coding phase. We're excited to create engaging content that will bring your website to life!</p>
+						<p>Time to make your website really shine! We need to capture the essence of what you want to say to your target audience and encourage them to take action with clear call-to-actions. Our content writing process includes crafting catchy headlines, writing new text, and proofreading to make sure everything is perfect. To make things even smoother, it's best to have all the content ready before or during the coding phase.</p>
 					</div>
 				</div>
 			</div>
@@ -1142,7 +1158,10 @@
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
 					<div class="bee-block bee-block-1 bee-paragraph">
-						<p>Let's make the magic happen! We'll implement the chosen frameworks and CMS to make sure your website runs smoothly on the server. All the cool stuff that was designed during the mock-up and layout creation will be brought to life and tested to perfection. Our team has a deep understanding of all the website development technologies we're using, so you can trust that everything will be done right. We'll even optimize your website for SEO by tweaking things like titles, descriptions, and keywords to help it rank higher in search engines. Plus, we'll make sure the code is valid - this is super important for SEO! We can't wait to make your website amazing!</p>
+						<p>We'll implement the chosen frameworks and CMS to make sure your website runs smoothly on the server. All the cool stuff that was designed during the mock-up and layout creation will be brought to life and tested to perfection.</p>
+						<p>My team has a deep understanding of all the website development technologies we're using, so you can trust that everything will be done right.</p>
+						<p>We optimize your website for SEO by tweaking things like titles, descriptions, and keywords to help it rank higher in search engines.</p>
+						<p>Plus, we'll make sure the code is valid - this is super important for SEO!</p>
 					</div>
 				</div>
 			</div>
@@ -1186,7 +1205,10 @@
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
 					<div class="bee-block bee-block-1 bee-paragraph">
-						<p>We're almost there! Testing your website is an important part of the process, and we'll go through every single link to make sure there are no broken ones. We'll also check every form and script, and even run a spell-check to catch any possible typos. Using code validators, we'll make sure your code follows current web standards - this is crucial if cross-browser compatibility is important to you. We want to make sure everything is perfect before we move on! Once we're done, it's time to upload your website to a server and make it live for the world to see. We're excited to launch your website and share it with everyone!</p>
+						<p>We're almost there!</p>
+						<p>Testing your website is an important part of the process, and we'll go through every single link to make sure there are no broken ones. This includes checking every form and script, and even run a spell-check to catch any possible typos.</p>
+						<p>Using code validators, we'll make sure your code follows current web standards - this is crucial if cross-browser compatibility is important to you. We want to make sure everything is perfect before we move on!</p>
+						<p>Once we're done, it's time to upload your website to a server and make it live for the world to see.</p>
 					</div>
 				</div>
 			</div>
@@ -1233,7 +1255,8 @@
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
 					<div class="bee-block bee-block-1 bee-paragraph">
-						<p>We'll add a user report system, so you can get feedback from your users and quickly detect any problems they might face.<br />We'll also eradicate any pesky bugs that might pop up, so your website is running smoothly all the time.<br />Finally, we'll develop a maintenance plan to keep your website up-to-date and running smoothly for the long-term.<br />Remember, your website is more than just a product - it's a service that you're providing to your users. We want to make sure it's the best service possible. Let's get your website up and running perfectly!</p>
+						<p>We'll add a user report system, so you can get feedback from your users and quickly detect any problems they might face.<br />We'll also eradicate any pesky bugs that might pop up, so your website is running smoothly all the time.<br />Finally, we'll develop a maintenance plan to keep your website up-to-date and running smoothly for the long-term.<br />Remember, your website is more than just a product - it's a service that you're providing to your users. We want to make sure it's the best service possible.</p>
+						<p>Let's get your website up and running perfectly!</p>
 					</div>
 				</div>
 			</div>
