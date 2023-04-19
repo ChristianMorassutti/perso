@@ -28,32 +28,6 @@
 			text-align: center
 		}
 
-		.bee-row-8 .bee-col-1,
-		.bee-row-8 .bee-col-2 {
-			border-left: 0 solid #fff
-		}
-
-		.bee-row-11 .bee-col-1,
-		.bee-row-14 .bee-col-1,
-		.bee-row-17 .bee-col-1,
-		.bee-row-20 .bee-col-1,
-		.bee-row-23 .bee-col-1,
-		.bee-row-26 .bee-col-1,
-		.bee-row-8 .bee-col-1,
-		.bee-row-8 .bee-col-2 {
-			border-bottom: 1px solid #fff;
-			border-right: 1px solid #fff
-		}
-
-		.bee-row-1 .bee-col-1 .bee-block-1,
-		.bee-row-29 .bee-col-3 .bee-block-2 {
-			font-family: inherit;
-			letter-spacing: 1px;
-			font-size: 20px;
-			color: #fff;
-			font-weight: 400
-		}
-
 		body {
 			background-color: transparent;
 			color: #000;
@@ -95,6 +69,7 @@
 		.bee-row-23 .bee-col-2 .bee-block-1 a,
 		.bee-row-23 .bee-col-2 .bee-block-2 a,
 		.bee-row-23 .bee-col-2 .bee-block-3 a,
+		.bee-row-23 .bee-col-2 .bee-block-4 a,
 		.bee-row-24 .bee-col-1 .bee-block-1 a,
 		.bee-row-26 .bee-col-1 .bee-block-2 a,
 		.bee-row-26 .bee-col-2 .bee-block-1 a,
@@ -102,6 +77,7 @@
 		.bee-row-26 .bee-col-2 .bee-block-3 a,
 		.bee-row-26 .bee-col-2 .bee-block-4 a,
 		.bee-row-27 .bee-col-1 .bee-block-1 a,
+		.bee-row-28 .bee-col-1 .bee-block-2 a,
 		.bee-row-29 .bee-col-3 .bee-block-5 a,
 		.bee-row-5 .bee-col-1 .bee-block-2 a,
 		.bee-row-5 .bee-col-1 .bee-block-3 a,
@@ -182,10 +158,6 @@
 		.bee-divider .center,
 		.bee-image .bee-center {
 			margin: 0 auto
-		}
-
-		.bee-divider .right {
-			float: right
 		}
 
 		.bee-row-29 .bee-col-1 .bee-block-1,
@@ -289,16 +261,21 @@
 		.bee-row-24 .bee-col-1,
 		.bee-row-25 .bee-col-1,
 		.bee-row-27 .bee-col-1,
+		.bee-row-28 .bee-col-1,
 		.bee-row-5 .bee-col-1,
 		.bee-row-6 .bee-col-1,
 		.bee-row-7 .bee-col-1,
-		.bee-row-8 .bee-col-2,
 		.bee-row-9 .bee-col-1 {
 			padding-bottom: 5px;
 			padding-top: 5px
 		}
 
 		.bee-row-1 .bee-col-1 .bee-block-1 {
+			color: #fff;
+			font-family: inherit;
+			font-size: 20px;
+			font-weight: 400;
+			letter-spacing: 1px;
 			padding-right: 60px;
 			text-align: right
 		}
@@ -338,6 +315,7 @@
 			background-size: cover
 		}
 
+		.bee-row-28,
 		.bee-row-29,
 		.bee-row-4 {
 			background-repeat: no-repeat
@@ -367,6 +345,7 @@
 		.bee-row-23 .bee-col-2 .bee-block-1,
 		.bee-row-23 .bee-col-2 .bee-block-2,
 		.bee-row-23 .bee-col-2 .bee-block-3,
+		.bee-row-23 .bee-col-2 .bee-block-4,
 		.bee-row-26 .bee-col-2 .bee-block-1,
 		.bee-row-26 .bee-col-2 .bee-block-2,
 		.bee-row-26 .bee-col-2 .bee-block-3,
@@ -391,7 +370,6 @@
 		.bee-row-24,
 		.bee-row-26,
 		.bee-row-27,
-		.bee-row-28,
 		.bee-row-6,
 		.bee-row-8 {
 			background-color: #1c1c1c;
@@ -409,8 +387,32 @@
 			background-repeat: no-repeat
 		}
 
+		.bee-row-11 .bee-col-1,
+		.bee-row-14 .bee-col-1,
+		.bee-row-17 .bee-col-1,
+		.bee-row-20 .bee-col-1,
+		.bee-row-23 .bee-col-1,
+		.bee-row-26 .bee-col-1,
 		.bee-row-8 .bee-col-1 {
+			border-bottom: 1px solid #fff;
+			border-left: 0 solid #fff;
+			border-right: 1px solid #fff;
 			border-top: 0 solid #fff
+		}
+
+		.bee-row-11 .bee-col-2,
+		.bee-row-14 .bee-col-2,
+		.bee-row-17 .bee-col-2,
+		.bee-row-20 .bee-col-2,
+		.bee-row-23 .bee-col-2,
+		.bee-row-26 .bee-col-2,
+		.bee-row-8 .bee-col-2 {
+			border-bottom: 1px solid #fff;
+			border-left: 0 solid #fff;
+			border-right: 0px solid #fff;
+			border-top: 0 solid #fff;
+			padding-bottom: 5px;
+			padding-top: 5px
 		}
 
 		.bee-row-12 .bee-col-1 .bee-block-1,
@@ -419,6 +421,7 @@
 		.bee-row-21 .bee-col-1 .bee-block-1,
 		.bee-row-24 .bee-col-1 .bee-block-1,
 		.bee-row-27 .bee-col-1 .bee-block-1,
+		.bee-row-28 .bee-col-1 .bee-block-2,
 		.bee-row-9 .bee-col-1 .bee-block-1 {
 			padding: 5px 60px 15px
 		}
@@ -430,18 +433,6 @@
 		.bee-row-23 .bee-col-1 .bee-block-2,
 		.bee-row-26 .bee-col-1 .bee-block-2 {
 			padding: 5px 40px
-		}
-
-		.bee-row-11 .bee-col-2,
-		.bee-row-14 .bee-col-2,
-		.bee-row-17 .bee-col-2,
-		.bee-row-20 .bee-col-2,
-		.bee-row-23 .bee-col-2,
-		.bee-row-26 .bee-col-2 {
-			border-bottom: 1px solid #fff;
-			border-right: 1px solid #fff;
-			padding-bottom: 5px;
-			padding-top: 5px
 		}
 
 		@media (max-width:1460px) {
@@ -459,6 +450,11 @@
 		}
 
 		.bee-row-29 .bee-col-3 .bee-block-2 {
+			color: #fafafa;
+			font-family: inherit;
+			font-size: 20px;
+			font-weight: 400;
+			letter-spacing: 1px;
 			padding-bottom: 5px;
 			padding-top: 5px;
 			text-align: center
@@ -474,8 +470,7 @@
 			padding: 5px
 		}
 
-		.bee-row-1 .bee-col-1 .bee-block-1 li a,
-		.bee-row-29 .bee-col-3 .bee-block-2 li a {
+		.bee-row-1 .bee-col-1 .bee-block-1 li a {
 			color: #fff
 		}
 
@@ -503,27 +498,6 @@
 		.bee-row-5 .bee-col-1 .bee-block-2 p:not(:last-child),
 		.bee-row-5 .bee-col-1 .bee-block-3 p:not(:last-child) {
 			margin-bottom: 0
-		}
-
-		.bee-row-5 .bee-col-1 .bee-block-4 p:not(:last-child) {
-			margin-bottom: 12px
-		}
-
-		.bee-row-11 .bee-col-1 .bee-block-2,
-		.bee-row-14 .bee-col-1 .bee-block-2,
-		.bee-row-17 .bee-col-1 .bee-block-2,
-		.bee-row-20 .bee-col-1 .bee-block-2,
-		.bee-row-23 .bee-col-1 .bee-block-2,
-		.bee-row-26 .bee-col-1 .bee-block-2,
-		.bee-row-8 .bee-col-1 .bee-block-2 {
-			color: #fff;
-			direction: ltr;
-			font-family: Oxygen, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-			font-size: 24px;
-			font-weight: 400;
-			letter-spacing: 0;
-			line-height: 150%;
-			text-align: center
 		}
 
 		.bee-row-11 .bee-col-1 .bee-block-2 p:not(:last-child),
@@ -554,6 +528,7 @@
 		.bee-row-23 .bee-col-2 .bee-block-1 p:not(:last-child),
 		.bee-row-23 .bee-col-2 .bee-block-2 p:not(:last-child),
 		.bee-row-23 .bee-col-2 .bee-block-3 p:not(:last-child),
+		.bee-row-23 .bee-col-2 .bee-block-4 p:not(:last-child),
 		.bee-row-24 .bee-col-1 .bee-block-1 p:not(:last-child),
 		.bee-row-26 .bee-col-1 .bee-block-2 p:not(:last-child),
 		.bee-row-26 .bee-col-2 .bee-block-1 p:not(:last-child),
@@ -561,12 +536,17 @@
 		.bee-row-26 .bee-col-2 .bee-block-3 p:not(:last-child),
 		.bee-row-26 .bee-col-2 .bee-block-4 p:not(:last-child),
 		.bee-row-27 .bee-col-1 .bee-block-1 p:not(:last-child),
+		.bee-row-28 .bee-col-1 .bee-block-2 p:not(:last-child),
 		.bee-row-8 .bee-col-1 .bee-block-2 p:not(:last-child),
 		.bee-row-8 .bee-col-2 .bee-block-1 p:not(:last-child),
 		.bee-row-8 .bee-col-2 .bee-block-2 p:not(:last-child),
 		.bee-row-8 .bee-col-2 .bee-block-3 p:not(:last-child),
 		.bee-row-9 .bee-col-1 .bee-block-1 p:not(:last-child) {
 			margin-bottom: 4px
+		}
+
+		.bee-row-5 .bee-col-1 .bee-block-4 p:not(:last-child) {
+			margin-bottom: 12px
 		}
 
 		.bee-row-11 .bee-col-2 .bee-block-1,
@@ -588,6 +568,7 @@
 		.bee-row-23 .bee-col-2 .bee-block-1,
 		.bee-row-23 .bee-col-2 .bee-block-2,
 		.bee-row-23 .bee-col-2 .bee-block-3,
+		.bee-row-23 .bee-col-2 .bee-block-4,
 		.bee-row-26 .bee-col-2 .bee-block-1,
 		.bee-row-26 .bee-col-2 .bee-block-2,
 		.bee-row-26 .bee-col-2 .bee-block-3,
@@ -605,6 +586,34 @@
 			text-align: left
 		}
 
+		.bee-row-11 .bee-col-1 .bee-block-2,
+		.bee-row-14 .bee-col-1 .bee-block-2,
+		.bee-row-17 .bee-col-1 .bee-block-2,
+		.bee-row-20 .bee-col-1 .bee-block-2,
+		.bee-row-23 .bee-col-1 .bee-block-2,
+		.bee-row-26 .bee-col-1 .bee-block-2,
+		.bee-row-8 .bee-col-1 .bee-block-2 {
+			color: #fff;
+			direction: ltr;
+			font-family: Oxygen, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+			font-size: 24px;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 150%;
+			text-align: center
+		}
+
+		.bee-row-28 .bee-col-1 .bee-block-2 {
+			color: #101010;
+			direction: ltr;
+			font-family: Oxygen, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+			font-size: 24px;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 150%;
+			text-align: center
+		}
+
 		.bee-row-29 .bee-col-3 .bee-block-5 {
 			color: #343434;
 			direction: ltr;
@@ -614,6 +623,10 @@
 			letter-spacing: 0;
 			line-height: 120%;
 			text-align: center
+		}
+
+		.bee-row-29 .bee-col-3 .bee-block-2 li a {
+			color: #fafafa
 		}
 
 		@media (max-width:768px) {
@@ -646,23 +659,6 @@
 			#bee-hamburger-memu-r28c2m1:checked~ul,
 			.bee-row-content:not(.no_stack) {
 				display: block
-			}
-
-			.bee-row-2 .bee-col-1 .bee-block-3 {
-				padding: 5px 10px !important
-			}
-
-			.bee-row-2 .bee-col-1 .bee-block-3 .bee-separator {
-				margin: auto !important;
-				float: right !important
-			}
-
-			.bee-row-2 .bee-col-1 .bee-block-2 {
-				padding: 10px 0 !important
-			}
-
-			.bee-row-2 .bee-col-1 .bee-block-2 h1 {
-				font-size: 31px !important
 			}
 
 			.bee-row-1 .bee-col-1 .bee-block-1 .bee-hamburger-controls,
@@ -717,6 +713,23 @@
 				padding: 5px 5px 5px 0 !important
 			}
 
+			.bee-row-2 .bee-col-1 .bee-block-3 {
+				padding: 5px 10px !important
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-3 .bee-separator {
+				margin: auto !important;
+				float: right !important
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-2 {
+				padding: 10px 0 !important
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-2 h1 {
+				font-size: 31px !important
+			}
+
 			.bee-row-5 .bee-col-1 .bee-block-2,
 			.bee-row-5 .bee-col-1 .bee-block-3 {
 				padding: 20px 15px 5px !important;
@@ -724,8 +737,14 @@
 				font-size: 16px !important
 			}
 
-			.bee-row-5 .bee-col-1 .bee-block-4 {
-				padding: 20px 20px 10px !important;
+			.bee-row-12 .bee-col-1 .bee-block-1,
+			.bee-row-15 .bee-col-1 .bee-block-1,
+			.bee-row-18 .bee-col-1 .bee-block-1,
+			.bee-row-21 .bee-col-1 .bee-block-1,
+			.bee-row-24 .bee-col-1 .bee-block-1,
+			.bee-row-27 .bee-col-1 .bee-block-1,
+			.bee-row-9 .bee-col-1 .bee-block-1 {
+				padding: 5px 15px 10px !important;
 				text-align: left !important;
 				font-size: 16px !important
 			}
@@ -748,14 +767,8 @@
 				font-size: 19px !important
 			}
 
-			.bee-row-11 .bee-col-1 .bee-block-2,
-			.bee-row-14 .bee-col-1 .bee-block-2,
-			.bee-row-17 .bee-col-1 .bee-block-2,
-			.bee-row-20 .bee-col-1 .bee-block-2,
-			.bee-row-23 .bee-col-1 .bee-block-2,
-			.bee-row-26 .bee-col-1 .bee-block-2,
-			.bee-row-8 .bee-col-1 .bee-block-2 {
-				padding: 20px 15px 5px !important;
+			.bee-row-5 .bee-col-1 .bee-block-4 {
+				padding: 20px 20px 10px !important;
 				text-align: left !important;
 				font-size: 16px !important
 			}
@@ -779,6 +792,7 @@
 			.bee-row-23 .bee-col-2 .bee-block-1,
 			.bee-row-23 .bee-col-2 .bee-block-2,
 			.bee-row-23 .bee-col-2 .bee-block-3,
+			.bee-row-23 .bee-col-2 .bee-block-4,
 			.bee-row-26 .bee-col-2 .bee-block-1,
 			.bee-row-26 .bee-col-2 .bee-block-2,
 			.bee-row-26 .bee-col-2 .bee-block-3,
@@ -791,14 +805,14 @@
 				font-size: 16px !important
 			}
 
-			.bee-row-12 .bee-col-1 .bee-block-1,
-			.bee-row-15 .bee-col-1 .bee-block-1,
-			.bee-row-18 .bee-col-1 .bee-block-1,
-			.bee-row-21 .bee-col-1 .bee-block-1,
-			.bee-row-24 .bee-col-1 .bee-block-1,
-			.bee-row-27 .bee-col-1 .bee-block-1,
-			.bee-row-9 .bee-col-1 .bee-block-1 {
-				padding: 5px 15px 10px !important;
+			.bee-row-11 .bee-col-1 .bee-block-2,
+			.bee-row-14 .bee-col-1 .bee-block-2,
+			.bee-row-17 .bee-col-1 .bee-block-2,
+			.bee-row-20 .bee-col-1 .bee-block-2,
+			.bee-row-23 .bee-col-1 .bee-block-2,
+			.bee-row-26 .bee-col-1 .bee-block-2,
+			.bee-row-8 .bee-col-1 .bee-block-2 {
+				padding: 20px 15px 5px !important;
 				text-align: left !important;
 				font-size: 16px !important
 			}
@@ -808,19 +822,27 @@
 				font-size: 20px !important
 			}
 
-			.bee-row-28 .bee-col-1 .bee-block-1 {
+			.bee-row-27 .bee-col-1 .bee-block-2,
+			.bee-row-28 .bee-col-1 .bee-block-1,
+			.bee-row-28 .bee-col-1 .bee-block-3 {
 				height: 50px !important
 			}
 
-			.bee-row-29 .bee-col-3 .bee-block-2 {
-				padding: 10px 0 5px !important;
-				text-align: right !important
+			.bee-row-28 .bee-col-1 .bee-block-2 {
+				padding: 5px 15px 10px !important;
+				text-align: center !important;
+				font-size: 20px !important
 			}
 
 			.bee-row-29 .bee-col-3 .bee-block-5 {
 				padding: 0 10px !important;
 				text-align: center !important;
 				font-size: 16px !important
+			}
+
+			.bee-row-29 .bee-col-3 .bee-block-2 {
+				padding: 10px 0 5px !important;
+				text-align: right !important
 			}
 		}
 	</style>
@@ -1100,7 +1122,8 @@
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
 					<div class="bee-block bee-block-1 bee-paragraph">
-						<p>Time to make your website really shine! We need to capture the essence of what you want to say to your target audience and encourage them to take action with clear call-to-actions. Our content writing process includes crafting catchy headlines, writing new text, and proofreading to make sure everything is perfect. To make things even smoother, it's best to have all the content ready before or during the coding phase.</p>
+						<p>Your copy writing should capture the essence of what you want to say to your target audience and encourage them to interact with your site via clear call-to-actions. The content writing process includes crafting catchy headlines, writing new text, and proofreading to make sure everything is perfect.</p>
+						<p><span style="background-color: transparent;">Lastly, we confirm that all assets are approved and gathered before I start the coding phase.</span></p>
 					</div>
 				</div>
 			</div>
@@ -1150,10 +1173,10 @@
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
 					<div class="bee-block bee-block-1 bee-paragraph">
-						<p>We'll implement the chosen frameworks and CMS to make sure your website runs smoothly on the server. All the cool stuff that was designed during the mock-up and layout creation will be brought to life and tested to perfection.</p>
-						<p>My team has a deep understanding of all the website development technologies we're using, so you can trust that everything will be done right.</p>
-						<p>We optimize your website for SEO by tweaking things like titles, descriptions, and keywords to help it rank higher in search engines.</p>
-						<p>Plus, we'll make sure the code is valid - this is super important for SEO!</p>
+						<p>We'll implement the chosen frameworks and CMS to make sure your website runs smoothly on your server.</p>
+						<p>All the cool stuff that was designed during the mock-up and layout creation will be brought to life and tested to perfection.</p>
+						<p>We optimize your website for SEO by tweaking things like titles, descriptions, image optimization and keywords to help it rank higher in search engines.</p>
+						<p>Plus, we'll make sure the code is valid and AODA Accessibly compliant - this is super important for SEO!</p>
 					</div>
 				</div>
 			</div>
@@ -1185,9 +1208,12 @@
 						<p><span style="background-color: #ffffff; color: #000000;"> Objectives: </span></p>
 					</div>
 					<div class="bee-block bee-block-2 bee-paragraph">
-						<p>Test before deployment</p>
+						<p>Test </p>
 					</div>
 					<div class="bee-block bee-block-3 bee-paragraph">
+						<p>Make final edits </p>
+					</div>
+					<div class="bee-block bee-block-4 bee-paragraph">
 						<p>Final test and launch</p>
 					</div>
 				</div>
@@ -1197,10 +1223,11 @@
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
 					<div class="bee-block bee-block-1 bee-paragraph">
-						<p>We're almost there!</p>
-						<p>Testing your website is an important part of the process, and we'll go through every single link to make sure there are no broken ones. This includes checking every form and script, and even run a spell-check to catch any possible typos.</p>
-						<p>Using code validators, we'll make sure your code follows current web standards - this is crucial if cross-browser compatibility is important to you. We want to make sure everything is perfect before we move on!</p>
-						<p>Once we're done, it's time to upload your website to a server and make it live for the world to see.</p>
+						<p>We're almost there, time to test, test, test!</p>
+						<p>Testing your website is an important part of the process, and I'll go through every single link to ensure they all function and never break.</p>
+						<p>This includes checking every form and script, and running a spell-check to catch any possible typos.</p>
+						<p>Using code validators, I make sure your code follows current web standards - this is crucial because cross-browser compatibility is very important.</p>
+						<p>Once complete, it's time to upload your website to a server and make it live for the world to see.</p>
 					</div>
 				</div>
 			</div>
@@ -1235,7 +1262,7 @@
 						<p>Add user report system</p>
 					</div>
 					<div class="bee-block bee-block-3 bee-paragraph">
-						<p>Eradicate bugs</p>
+						<p>Eradicate any found bugs from live user experience</p>
 					</div>
 					<div class="bee-block bee-block-4 bee-paragraph">
 						<p>Develop maintenance plan</p>
@@ -1247,8 +1274,11 @@
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
 					<div class="bee-block bee-block-1 bee-paragraph">
-						<p>We'll add a user report system, so you can get feedback from your users and quickly detect any problems they might face.<br />We'll also eradicate any pesky bugs that might pop up, so your website is running smoothly all the time.<br />Finally, we'll develop a maintenance plan to keep your website up-to-date and running smoothly for the long-term.<br />Remember, your website is more than just a product - it's a service that you're providing to your users. We want to make sure it's the best service possible.</p>
-						<p>Let's get your website up and running perfectly!</p>
+						<p>Although optional, adding a user report intake form to your new site will allow users to give feedback, and assist detecting any problems they may experience, unique to their browser or device.</p>
+						<p>Continual in-browser and on-mobile testing will eradicate any pesky bugs that might pop up to ensure your website is running smoothly.<br />Finally, we'll develop a maintenance plan to keep your website up-to-date and running smoothly for the long-term.</p>
+					</div>
+					<div class="bee-block bee-block-2 bee-spacer bee-mobile_hide">
+						<div class="spacer" style="height:50px;"></div>
 					</div>
 				</div>
 			</div>
@@ -1256,7 +1286,14 @@
 		<div class="bee-row bee-row-28">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer">
+					<div class="bee-block bee-block-1 bee-spacer bee-mobile_hide">
+						<div class="spacer" style="height:50px;"></div>
+					</div>
+					<div class="bee-block bee-block-2 bee-paragraph">
+						<p>Remember, your website is more than just a product - it's a service that you're providing to your clients.</p>
+						<p>I want to make sure it's the best service possible and your website is always up and running perfectly!</p>
+					</div>
+					<div class="bee-block bee-block-3 bee-spacer bee-mobile_hide">
 						<div class="spacer" style="height:50px;"></div>
 					</div>
 				</div>
