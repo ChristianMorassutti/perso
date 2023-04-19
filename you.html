@@ -12,6 +12,7 @@
 	<meta content="" name="description" />
 	<meta charset="utf-8" />
 	<meta content="width=device-width" name="viewport" />
+	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 	<link href="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/797129_780934/imported/Ym4i-20230403-205846/favicon_images/Christian_Morassutti_LOGO-38e487-16-icon.png" rel="icon" sizes="16x16" />
 	<link href="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/797129_780934/imported/Ym4i-20230403-205846/favicon_images/Christian_Morassutti_LOGO-38e487-32-icon.png" rel="icon" sizes="32x32" />
 	<link href="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/797129_780934/imported/Ym4i-20230403-205846/favicon_images/Christian_Morassutti_LOGO-38e487-apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
@@ -23,13 +24,17 @@
 			position: relative
 		}
 
+		.bee-html-block {
+			text-align: center
+		}
+
 		.bee-row-1 .bee-col-1 .bee-block-1,
 		.bee-row-8 .bee-col-3 .bee-block-2 {
 			font-family: inherit;
-			font-weight: 400;
 			letter-spacing: 1px;
 			color: #fff;
-			font-size: 20px
+			font-size: 20px;
+			font-weight: 400
 		}
 
 		body {
@@ -46,11 +51,13 @@
 		}
 
 		.bee-row-5 .bee-col-1 .bee-block-2 a,
+		.bee-row-5 .bee-col-1 .bee-block-3 a,
+		.bee-row-5 .bee-col-1 .bee-block-4 a,
 		.bee-row-6 .bee-col-1 .bee-block-2 a,
 		.bee-row-7 .bee-col-1 .bee-block-2 a,
 		.bee-row-8 .bee-col-3 .bee-block-5 a,
 		a {
-			color: #8a3c90
+			color: #838383
 		}
 
 		* {
@@ -156,10 +163,6 @@
 			display: inline-block
 		}
 
-		.bee-social .icon img {
-			max-height: 32px
-		}
-
 		.bee-paragraph {
 			overflow-wrap: anywhere
 		}
@@ -242,6 +245,8 @@
 		}
 
 		.bee-row-5 .bee-col-1 .bee-block-2,
+		.bee-row-5 .bee-col-1 .bee-block-3,
+		.bee-row-5 .bee-col-1 .bee-block-4,
 		.bee-row-6 .bee-col-1 .bee-block-2 {
 			padding: 5px 60px
 		}
@@ -253,21 +258,6 @@
 		.bee-row-8 .bee-col-3 .bee-block-2 {
 			padding-bottom: 5px;
 			padding-top: 5px;
-			text-align: center
-		}
-
-		.bee-row-5 .bee-col-1 .bee-block-2,
-		.bee-row-6 .bee-col-1 .bee-block-2,
-		.bee-row-7 .bee-col-1 .bee-block-2,
-		.bee-row-8 .bee-col-3 .bee-block-5 {
-			direction: ltr;
-			font-family: Oxygen, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-			font-weight: 400;
-			letter-spacing: 0
-		}
-
-		.bee-row-8 .bee-col-3 .bee-block-4 {
-			padding: 10px;
 			text-align: center
 		}
 
@@ -287,15 +277,23 @@
 		}
 
 		.bee-row-5 .bee-col-1 .bee-block-2,
+		.bee-row-5 .bee-col-1 .bee-block-3,
+		.bee-row-5 .bee-col-1 .bee-block-4,
 		.bee-row-6 .bee-col-1 .bee-block-2,
 		.bee-row-7 .bee-col-1 .bee-block-2 {
 			color: #fff;
+			direction: ltr;
+			font-family: Oxygen, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 			font-size: 20px;
+			font-weight: 400;
+			letter-spacing: 0;
 			line-height: 150%;
 			text-align: left
 		}
 
 		.bee-row-5 .bee-col-1 .bee-block-2 p:not(:last-child),
+		.bee-row-5 .bee-col-1 .bee-block-3 p:not(:last-child),
+		.bee-row-5 .bee-col-1 .bee-block-4 p:not(:last-child),
 		.bee-row-7 .bee-col-1 .bee-block-2 p:not(:last-child),
 		.bee-row-8 .bee-col-3 .bee-block-5 p:not(:last-child) {
 			margin-bottom: 0
@@ -307,7 +305,11 @@
 
 		.bee-row-8 .bee-col-3 .bee-block-5 {
 			color: #343434;
+			direction: ltr;
+			font-family: Oxygen, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: 0;
 			line-height: 120%;
 			text-align: center
 		}
@@ -351,6 +353,14 @@
 			.bee-row-2 .bee-col-1 .bee-block-3 .bee-separator {
 				margin: auto !important;
 				float: right !important
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-2 {
+				padding: 10px 0 !important
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-2 h1 {
+				font-size: 31px !important
 			}
 
 			.bee-row-1 .bee-col-1 .bee-block-1 .bee-hamburger-controls,
@@ -405,15 +415,9 @@
 				padding: 5px 5px 5px 0 !important
 			}
 
-			.bee-row-2 .bee-col-1 .bee-block-2 {
-				padding: 10px 0 !important
-			}
-
-			.bee-row-2 .bee-col-1 .bee-block-2 h1 {
-				font-size: 31px !important
-			}
-
 			.bee-row-5 .bee-col-1 .bee-block-2,
+			.bee-row-5 .bee-col-1 .bee-block-3,
+			.bee-row-5 .bee-col-1 .bee-block-4,
 			.bee-row-7 .bee-col-1 .bee-block-2 {
 				padding: 20px 15px 5px !important;
 				text-align: center !important;
@@ -429,10 +433,6 @@
 			.bee-row-8 .bee-col-3 .bee-block-2 {
 				padding: 10px 0 5px !important;
 				text-align: right !important
-			}
-
-			.bee-row-8 .bee-col-3 .bee-block-4 {
-				padding: 15px 10px 10px !important
 			}
 
 			.bee-row-8 .bee-col-3 .bee-block-5 {
@@ -502,7 +502,14 @@
 						<div class="spacer" style="height:50px;"></div>
 					</div>
 					<div class="bee-block bee-block-2 bee-paragraph">
-						<p>There is no one-size-fits-all answer to what the ideal client looks like, as different businesses have different target audiences with unique characteristics. However, there are some general characteristics that may be desirable in an ideal client, including:</p>
+						<p>Firstly, I love all of my clients.</p>
+					</div>
+					<div class="bee-block bee-block-3 bee-paragraph">
+						<p>Every client is unique and represents a world of opportunity for me. This is why I dedicate myself to my clients success. </p>
+						<p>I depend on my clients just like they depend on me, and when we both commit to the project, I find tasks become easier to accomplish and all of our goals become clearer faster!</p>
+					</div>
+					<div class="bee-block bee-block-4 bee-paragraph">
+						<p>Below are some traits I REALLY value in clients, I work by these same principles and urge clients to truly OWN their role in the business relationship through these principles. Trust me, no-one is perfect but a bit of consideration does go a long way!</p>
 					</div>
 				</div>
 			</div>
@@ -514,13 +521,13 @@
 						<div class="spacer" style="height:50px;"></div>
 					</div>
 					<div class="bee-block bee-block-2 bee-paragraph">
-						<p><span style="background-color: #ffffff; color: #000000;"> Engaged: </span>  Interested in the betterment of the website and is actively engaged with the website's content.</p>
-						<p><span style="color: #000000; background-color: #ffffff;"> Collaborative: </span>  Offering insights on or falls within the website's target audience and is likely to have a genuine interest in the products or services offered. Willing to collaborate with the website service provider, sharing ideas and providing feedback in a constructive and respectful manner.</p>
-						<p><span style="color: #000000; background-color: #ffffff;"> Responsive: </span>  Willing to interact with the website and provide feedback on their experience, allowing the website owner to continuously improve the site's user experience.</p>
-						<p><span style="color: #000000; background-color: #ffffff;"> Clear Communication: </span>  Includes being responsive, available, and providing clear instructions and feedback.</p>
-						<p><span style="color: #000000; background-color: #ffffff;"> Respectful: </span>  Valuing expertise and time. This includes paying on time and acknowledging the effort and skills of the service provider.</p>
-						<p><span style="background-color: #ffffff; color: #000000;"> Realistic:</span><span style="color: #000000;"><span style="background-color: #ffffff;"> </span>  <span style="color: #ffffff;">Regarding</span></span> expectations  the website development process and the results that can be achieved within the budget and timeline.</p>
-						<p><span style="background-color: #ffffff; color: #000000;"> Organized: </span>  Providing the necessary content and materials in a timely manner, allowing the website service provider to meet the project's deadlines.<br /><span style="background-color: #ffffff; color: #000000;"> Open-minded: </span>  Open to new ideas and willing to take risks, allowing the website service provider to be creative and deliver innovative solutions.</p>
+						<p><span style="background-color: #ffffff; color: #000000;"> Engaged: </span>  Interested in the betterment of the website and is actively engaged in the improvement of the website's content.</p>
+						<p><span style="color: #000000; background-color: #ffffff;"> Collaborative: </span>  Offering insights on or falls within, the website's target audience, and is likely to have a genuine interest in the products or services offered. Also, be able to collaborate with me the website developer, sharing ideas and providing feedback in a constructive manner.</p>
+						<p><span style="color: #000000; background-color: #ffffff;"> Responsive: </span>  Simply responding to communication in a timely manner that won't disrupt or hold up the process.</p>
+						<p><span style="color: #000000; background-color: #ffffff;"> Clear Communicator: </span>  Includes being responsive, available, and providing clear instructions and feedback.</p>
+						<p><span style="color: #000000; background-color: #ffffff;"> Respectful: </span>  Values expertise and time. This includes paying on time, communicating professionally and acknowledging the effort and skills of the web developer.</p>
+						<p><span style="background-color: #ffffff; color: #000000;"> Realistic:</span><span style="color: #000000;"><span style="background-color: #ffffff;"> </span>  <span style="color: #ffffff;">Regarding</span></span> expectations, the website development process, and the results that can be achieved within the budget and timeline.</p>
+						<p><span style="background-color: #ffffff; color: #000000;"> Organized: </span>  Providing the necessary content and materials in a timely manner, allowing the website developer to meet the project's deadlines.<br /><span style="background-color: #ffffff; color: #000000;"> Open-minded: </span>  Open to new ideas and willing to take risks, allowing the web developer to be creative and deliver innovative solutions.</p>
 					</div>
 				</div>
 			</div>
@@ -532,7 +539,9 @@
 						<div class="spacer" style="height:50px;"></div>
 					</div>
 					<div class="bee-block bee-block-2 bee-paragraph">
-						<p>Overall, an ideal client is someone who communicates clearly, is respectful, collaborative, realistic, organized, and open-minded, and who values the expertise and time of the website developer. This can help ensure a successful website development project and a positive ongoing relationship.</p>
+						<p>To conclude, the working relationship is after all, a relationship. The effort must be appreciated, collaboration should be welcomed and ultimately teamwork must be nurtured throughout the project. I trust in these attributes and deliver nothing but the best, if you share this feeling with me perhaps you are my next AMAZING client?!?!</p>
+						<p> </p>
+						<p>Click here to set up an appointment with me, let's get to work!</p>
 					</div>
 					<div class="bee-block bee-block-3 bee-spacer">
 						<div class="spacer" style="height:50px;"></div>
@@ -546,7 +555,7 @@
 				</video></div>
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-image"><a href="#" target="_blank"><img alt="christianmorassutti.com |  Website + Marketing Programmer" class="bee-center bee-fixedwidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/797129_780934/imported/Su2r-20230403-205716/Christian%20Morassutti%20LOGO.png" style="max-width:216px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="/home.html" target="_self"><img alt="christianmorassutti.com |  Website + Marketing Programmer" class="bee-center bee-fixedwidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/797129_780934/imported/Su2r-20230403-205716/Christian%20Morassutti%20LOGO.png" style="max-width:216px;" /></a></div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w4">
 					<div class="bee-block bee-block-1 bee-spacer bee-mobile_hide">
@@ -569,8 +578,20 @@
 					<div class="bee-block bee-block-3 bee-spacer bee-mobile_hide">
 						<div class="spacer" style="height:20px;"></div>
 					</div>
-					<div class="bee-block bee-block-4 bee-social">
-						<div class="content"><span class="icon" style="padding:0 7.5px 0 7.5px;"><a href="mailto:mailto:christian.morassutti@gmail.com" target="_blank"><img alt="E-Mail" src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-outline-circle-white/mail@2x.png" title="E-Mail" /></a></span><span class="icon" style="padding:0 7.5px 0 7.5px;"><a href="https://www.linkedin.com/in/christian-morassutti/" target="_blank"><img alt="LinkedIn" src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-outline-circle-white/linkedin@2x.png" title="LinkedIn" /></a></span><span class="icon" style="padding:0 7.5px 0 7.5px;"><a href="https://docs.google.com/document/d/1eKXqZFEHArDlEwbYxxSavvFyONgNo6fvwzUj-CJuR20/edit" target="_blank"><img alt="View resume" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/797129_780934/imported/Su2r-20230403-205716/1_2.png" title="View resume" /></a></span><span class="icon" style="padding:0 7.5px 0 7.5px;"><a href="http://calendly.com/christian-morassutti" target="_blank"><img alt="Set a meeting" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/797129_780934/Icon%20menu/1.png" title="Set a meeting" /></a></span></div>
+					<div class="bee-block bee-block-4 bee-html-block">
+						<div class="" style="padding-top:5px padding-bottom:5px; margin-top:5px; margin-bottom:5px;">
+							<a href="mailto:mailto:christian.morassutti@gmail.com" style="text-decoration:none;" target="_blank">
+								<img alt="E-Mail" src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-outline-circle-white/mail@2x.png" style="width: 35px; height: 35px; margin-right: 3px; margin-left: 2px;" title="E-Mail" />
+							</a>
+							<a href="https://www.linkedin.com/in/christian-morassutti/" style="text-decoration:none;" target="_blank">
+								<img alt="LinkedIn" src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-outline-circle-white/linkedin@2x.png" style="width: 35px; height: 35px; margin-right: 2px; margin-left: 3px;" title="LinkedIn" />
+							</a>
+							<a href="https://docs.google.com/document/d/1eKXqZFEHArDlEwbYxxSavvFyONgNo6fvwzUj-CJuR20/edit" style="text-decoration:none;" target="_blank">
+								<img alt="View resume" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/797129_780934/imported/Su2r-20230403-205716/1_2.png" style="width: 43px; height: 35px;" title="View resume" />
+							</a>
+							<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/christianmorassutti/introductory-call'});return false;" style="text-decoration:none;" target="_blank">
+								<img alt="Set a meeting" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/797129_780934/Icon%20menu/1.png" style="width: 43px; height: 35px;" title="Set a meeting" /></a>
+						</div>
 					</div>
 					<div class="bee-block bee-block-5 bee-paragraph">
 						<p>christianmorassutti.com ©2023</p>
@@ -579,6 +600,7 @@
 			</div>
 		</div>
 	</div>
+	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </body>
 
 </html>
