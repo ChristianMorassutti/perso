@@ -60,10 +60,10 @@
 		.bee-row-10 .bee-col-1 .bee-block-3 a,
 		.bee-row-11 .bee-col-1 .bee-block-1 a,
 		.bee-row-11 .bee-col-1 .bee-block-2 a,
+		.bee-row-11 .bee-col-1 .bee-block-3 a,
 		.bee-row-13 .bee-col-3 .bee-block-5 a,
 		.bee-row-5 .bee-col-1 .bee-block-2 a,
 		.bee-row-5 .bee-col-1 .bee-block-3 a,
-		.bee-row-5 .bee-col-1 .bee-block-4 a,
 		a {
 			color: #838383
 		}
@@ -277,9 +277,9 @@
 		.bee-row-10 .bee-col-1 .bee-block-3,
 		.bee-row-11 .bee-col-1 .bee-block-1,
 		.bee-row-11 .bee-col-1 .bee-block-2,
+		.bee-row-11 .bee-col-1 .bee-block-3,
 		.bee-row-5 .bee-col-1 .bee-block-2,
-		.bee-row-5 .bee-col-1 .bee-block-3,
-		.bee-row-5 .bee-col-1 .bee-block-4 {
+		.bee-row-5 .bee-col-1 .bee-block-3 {
 			padding: 5px 60px
 		}
 
@@ -321,9 +321,9 @@
 		.bee-row-10 .bee-col-1 .bee-block-3,
 		.bee-row-11 .bee-col-1 .bee-block-1,
 		.bee-row-11 .bee-col-1 .bee-block-2,
+		.bee-row-11 .bee-col-1 .bee-block-3,
 		.bee-row-5 .bee-col-1 .bee-block-2,
-		.bee-row-5 .bee-col-1 .bee-block-3,
-		.bee-row-5 .bee-col-1 .bee-block-4 {
+		.bee-row-5 .bee-col-1 .bee-block-3 {
 			color: #f8f8f8;
 			direction: ltr;
 			font-family: Oxygen, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
@@ -336,6 +336,7 @@
 
 		.bee-row-11 .bee-col-1 .bee-block-1 p:not(:last-child),
 		.bee-row-11 .bee-col-1 .bee-block-2 p:not(:last-child),
+		.bee-row-11 .bee-col-1 .bee-block-3 p:not(:last-child),
 		.bee-row-13 .bee-col-3 .bee-block-5 p:not(:last-child),
 		.bee-row-5 .bee-col-1 .bee-block-2 p:not(:last-child),
 		.bee-row-5 .bee-col-1 .bee-block-3 p:not(:last-child) {
@@ -343,8 +344,7 @@
 		}
 
 		.bee-row-10 .bee-col-1 .bee-block-2 p:not(:last-child),
-		.bee-row-10 .bee-col-1 .bee-block-3 p:not(:last-child),
-		.bee-row-5 .bee-col-1 .bee-block-4 p:not(:last-child) {
+		.bee-row-10 .bee-col-1 .bee-block-3 p:not(:last-child) {
 			margin-bottom: 4px
 		}
 
@@ -389,15 +389,6 @@
 			#bee-hamburger-memu-r12c2m1:checked~ul,
 			.bee-row-content:not(.no_stack) {
 				display: block
-			}
-
-			.bee-row-2 .bee-col-1 .bee-block-3 {
-				padding: 5px 10px !important
-			}
-
-			.bee-row-2 .bee-col-1 .bee-block-3 .bee-separator {
-				margin: auto !important;
-				float: right !important
 			}
 
 			.bee-row-2 .bee-col-1 .bee-block-2 {
@@ -456,6 +447,15 @@
 				transform: translate(-50%, -50%) scaleY(1)
 			}
 
+			.bee-row-2 .bee-col-1 .bee-block-3 {
+				padding: 5px 10px !important
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-3 .bee-separator {
+				margin: auto !important;
+				float: right !important
+			}
+
 			.bee-row-5 .bee-col-1 .bee-block-3 {
 				padding: 5px 10px 20px !important;
 				text-align: left !important;
@@ -471,8 +471,7 @@
 			}
 
 			.bee-row-10 .bee-col-1 .bee-block-2,
-			.bee-row-5 .bee-col-1 .bee-block-2,
-			.bee-row-5 .bee-col-1 .bee-block-4 {
+			.bee-row-5 .bee-col-1 .bee-block-2 {
 				padding: 20px 10px 5px !important;
 				text-align: left !important;
 				font-size: 16px !important
@@ -490,21 +489,22 @@
 				font-size: 16px !important
 			}
 
-			.bee-row-11 .bee-col-1 .bee-block-2 {
+			.bee-row-11 .bee-col-1 .bee-block-2,
+			.bee-row-11 .bee-col-1 .bee-block-3 {
 				padding: 5px 10px 35px !important;
 				text-align: left !important;
 				font-size: 16px !important
-			}
-
-			.bee-row-13 .bee-col-3 .bee-block-2 {
-				padding: 10px 0 5px !important;
-				text-align: right !important
 			}
 
 			.bee-row-13 .bee-col-3 .bee-block-5 {
 				padding: 0 10px !important;
 				text-align: center !important;
 				font-size: 16px !important
+			}
+
+			.bee-row-13 .bee-col-3 .bee-block-2 {
+				padding: 10px 0 5px !important;
+				text-align: right !important
 			}
 		}
 	</style>
@@ -568,15 +568,12 @@
 						<div class="spacer" style="height:50px;"></div>
 					</div>
 					<div class="bee-block bee-block-2 bee-paragraph">
-						<p>My story begins in Toronto, I had an opportunity to volunteer in the "Devs Room" of a large and successful charity to sit-in and learn. I was eager to learn web development as digital commodity that I could grow with in both knowledge and success. </p>
+						<p>My story begins in Toronto. I had an opportunity to volunteer in the "Dev Room" of a large and successful charity to sit-in and learn. Let's just say the team was a "lively bunch" of geniuses who stopped at nothing to help me grasp the tools and methodologies essential to their work. I was then encouraged to enroll in a course to learn the basics of HTML CSS and Javascript, I would have a good shot of making it on the team!</p>
 					</div>
 					<div class="bee-block bee-block-3 bee-paragraph">
-						<p>Let's just say the team was a "lively bunch" of geniuses who stopped at nothing to help me grasp the tools and methodologies essential to their work. Soon after, it was decided that should I enrol in a course that would show me the basics of <a href="https://www.w3schools.com/videos/index.php" rel="noopener" style="text-decoration: underline;" target="_blank">HTML</a> <a href="https://www.w3schools.com/css/css_intro.asp" rel="noopener" style="text-decoration: underline;" target="_blank">CSS</a> and <a href="https://www.w3schools.com/js/default.asp" rel="noopener" style="text-decoration: underline;" target="_blank">Javascript</a>, I would have a good shot of making it on the team!</p>
+						<p>Utilizing <a href="https://www.atlassian.com/software/jira" rel="noopener" style="text-decoration: underline;" target="_blank" title="Jira">Jira</a> to access ticketed requests for email creation or page updates, I worked for 3 years  embedded in an amazing team. Liaising with department heads and powerful marketing teams, essentially doing everything we could for the causes we loved supporting.</p>
 					</div>
-					<div class="bee-block bee-block-4 bee-paragraph">
-						<p>Using <a href="https://www.atlassian.com/software/jira" rel="noopener" style="text-decoration: underline;" target="_blank">Jira</a> to handle the incoming tickets for e-blast creation or content/page updates I stayed on for 3 years, working with the best team, liaising with department heads and powerful marketing teams, doing everything we could for the causes we loved supporting.</p>
-					</div>
-					<div class="bee-block bee-block-5 bee-spacer">
+					<div class="bee-block bee-block-4 bee-spacer">
 						<div class="spacer" style="height:50px;"></div>
 					</div>
 				</div>
@@ -606,17 +603,17 @@
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w4">
 					<div class="bee-block bee-block-1 bee-heading">
-						<h3 style="color:#000000;direction:ltr;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:20px;font-weight:400;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">I learned that communication is paramount for clearly and empathically identifying motivations and strengths among team members especially, but also understanding the values of external stake holders.</span> </h3>
+						<h3 style="color:#000000;direction:ltr;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:20px;font-weight:400;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">Communication is paramount for clearly identifying the strengths among team members and understanding the values of external stakeholders.<br /> </h3>
 					</div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w4">
 					<div class="bee-block bee-block-1 bee-heading">
-						<h3 style="color:#000000;direction:ltr;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:20px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">I learned that processes can always improve if you care about the steps taken and the people you work with.</span> </h3>
+						<h3 style="color:#000000;direction:ltr;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:20px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">Processes can always improve if you carefully evaluate the procedural steps taken and the skillsets of the people you work with.<br /> </h3>
 					</div>
 				</div>
 				<div class="bee-col bee-col-3 bee-col-w4">
 					<div class="bee-block bee-block-1 bee-heading">
-						<h3 style="color:#000000;direction:ltr;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:20px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">I learned that ownership and responsibility to improve is individual and success is built-in through the support and guidance of true leadership.</span> </h3>
+						<h3 style="color:#000000;direction:ltr;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:20px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">Ownership and one’s responsibility to succeed, is easily nurtured through the support and guidance of true leadership.<br /> </h3>
 					</div>
 				</div>
 			</div>
@@ -637,10 +634,10 @@
 						<div class="spacer" style="height:25px;"></div>
 					</div>
 					<div class="bee-block bee-block-2 bee-paragraph">
-						<p>I studied at <a href="https://junocollege.com/" rel="noopener" style="text-decoration: underline;" target="_blank">Juno College</a> ( formerly HackerYou ) learning the most up-to-date semantic HTML5 coding, styling with CSS3 and getting my feet wet in Vanilla Javascript. I had prior in-depth understanding of web development from studying Integrated Media at <a href="https://www.ocadu.ca/" rel="noopener" style="text-decoration: underline;" target="_blank">OCADU</a> ( formerly Ontario College of Art and Design ) however things came a long way from my studies with Adobe Dreamweaver and Flash programming.</p>
+						<p>I studied at <a href="https://junocollege.com/" rel="noopener" style="text-decoration: underline;" target="_blank">Juno College</a> ( formerly HackerYou ) learning the most up-to-date semantic HTML5 coding, styling with CSS3 and getting my feet wet in Vanilla Javascript. I had prior understanding of web development from studying Integrated Media at <a href="https://www.ocadu.ca/" rel="noopener" style="text-decoration: underline;" target="_blank">OCADU</a> ( formerly Ontario College of Art and Design ) however things came a long way from my early studies with Adobe Dreamweaver and Flash programming.</p>
 					</div>
 					<div class="bee-block bee-block-3 bee-paragraph">
-						<p>With some "rookie luck" and determination, I learned fast, everything I could about the world of CMS builders specifically <a href="https://wordpress.org/" rel="noopener" style="text-decoration: underline;" target="_blank">WordPress</a>. I was also introduced to the mighty marketing email or "E-blast, with a build process including <a href="https://www.adobe.com/ca/products/photoshop.html" rel="noopener" style="text-decoration: underline;" target="_blank">Adobe Photoshop</a> and <a href="https://appexchange.salesforce.com/listingDetail?listingId=a0N300000016boHEAQ&amp;tab=e" rel="noopener" style="text-decoration: underline;" target="_blank">Pardot</a> softwares and deployment through Salesforce. </p>
+						<p>I learned fast about the world of CMS builders, specifically <a href="https://wordpress.org/" rel="noopener" style="text-decoration: underline;" target="_blank">WordPress</a> , and was introduced to the mighty marketing email or "E-blast”. These were built with <a href="https://www.adobe.com/ca/products/photoshop.html" rel="noopener" style="text-decoration: underline;" target="_blank">Adobe Photoshop</a> and and deployed through Salesforce.</p>
 					</div>
 				</div>
 			</div>
@@ -649,10 +646,13 @@
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
 					<div class="bee-block bee-block-1 bee-paragraph">
-						<p>Yes I have also continued to learn technical knowledge, new languages, software solutions and best practices that surround the betterment of web 2.0; Accessibility built in, responsive client experiences and sustainable ownership of web properties.</p>
+						<p>With continual technical learning of new languages, software solutions and best practices that surround the betterment of web 2.0; I sought to understand and explore website accessibility, responsive client experiences and sustainable ownership of web properties.</p>
 					</div>
 					<div class="bee-block bee-block-2 bee-paragraph">
-						<p>Moving forward, I bring heart and personality to teamwork, honesty and appreciation to client communications and work really hard for completion and satisfaction in every regard to every role I play for every single contract. You will notice this when we discuss working together in the near future ;)</p>
+						<p>Moving forward, I bring heart and personality to teamwork, honesty and appreciation to client communications and work really hard for every single contract.</p>
+					</div>
+					<div class="bee-block bee-block-3 bee-paragraph">
+						<p>You will notice this when we discuss working together in the near future ;)</p>
 					</div>
 				</div>
 			</div>
