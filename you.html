@@ -57,6 +57,7 @@
 		.bee-row-5 .bee-col-1 .bee-block-2 a,
 		.bee-row-5 .bee-col-1 .bee-block-3 a,
 		.bee-row-5 .bee-col-1 .bee-block-4 a,
+		.bee-row-5 .bee-col-1 .bee-block-5 a,
 		.bee-row-6 .bee-col-1 .bee-block-2 a,
 		.bee-row-7 .bee-col-1 .bee-block-2 a,
 		.bee-row-8 .bee-col-3 .bee-block-5 a,
@@ -247,6 +248,7 @@
 		.bee-row-5 .bee-col-1 .bee-block-2,
 		.bee-row-5 .bee-col-1 .bee-block-3,
 		.bee-row-5 .bee-col-1 .bee-block-4,
+		.bee-row-5 .bee-col-1 .bee-block-5,
 		.bee-row-6 .bee-col-1 .bee-block-2 {
 			padding: 5px 60px
 		}
@@ -279,6 +281,7 @@
 		.bee-row-5 .bee-col-1 .bee-block-2,
 		.bee-row-5 .bee-col-1 .bee-block-3,
 		.bee-row-5 .bee-col-1 .bee-block-4,
+		.bee-row-5 .bee-col-1 .bee-block-5,
 		.bee-row-6 .bee-col-1 .bee-block-2,
 		.bee-row-7 .bee-col-1 .bee-block-2 {
 			color: #f8f8f8;
@@ -294,13 +297,10 @@
 		.bee-row-5 .bee-col-1 .bee-block-2 p:not(:last-child),
 		.bee-row-5 .bee-col-1 .bee-block-3 p:not(:last-child),
 		.bee-row-5 .bee-col-1 .bee-block-4 p:not(:last-child),
+		.bee-row-5 .bee-col-1 .bee-block-5 p:not(:last-child),
 		.bee-row-7 .bee-col-1 .bee-block-2 p:not(:last-child),
 		.bee-row-8 .bee-col-3 .bee-block-5 p:not(:last-child) {
 			margin-bottom: 0
-		}
-
-		.bee-row-6 .bee-col-1 .bee-block-2 p:not(:last-child) {
-			margin-bottom: 12px
 		}
 
 		.bee-row-8 .bee-col-3 .bee-block-5 {
@@ -312,6 +312,10 @@
 			letter-spacing: 0;
 			line-height: 120%;
 			text-align: center
+		}
+
+		.bee-row-6 .bee-col-1 .bee-block-2 p:not(:last-child) {
+			margin-bottom: 12px
 		}
 
 		@media (max-width:768px) {
@@ -344,23 +348,6 @@
 			#bee-hamburger-memu-r7c2m1:checked~ul,
 			.bee-row-content:not(.no_stack) {
 				display: block
-			}
-
-			.bee-row-2 .bee-col-1 .bee-block-3 {
-				padding: 5px 10px !important
-			}
-
-			.bee-row-2 .bee-col-1 .bee-block-3 .bee-separator {
-				margin: auto !important;
-				float: right !important
-			}
-
-			.bee-row-2 .bee-col-1 .bee-block-2 {
-				padding: 10px 0 !important
-			}
-
-			.bee-row-2 .bee-col-1 .bee-block-2 h1 {
-				font-size: 31px !important
 			}
 
 			.bee-row-1 .bee-col-1 .bee-block-1 .bee-hamburger-controls,
@@ -415,18 +402,30 @@
 				padding: 5px 5px 5px 0 !important
 			}
 
+			.bee-row-2 .bee-col-1 .bee-block-3 {
+				padding: 5px 10px !important
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-3 .bee-separator {
+				margin: auto !important;
+				float: right !important
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-2 {
+				padding: 10px 0 !important
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-2 h1 {
+				font-size: 31px !important
+			}
+
 			.bee-row-5 .bee-col-1 .bee-block-2,
 			.bee-row-5 .bee-col-1 .bee-block-3,
 			.bee-row-5 .bee-col-1 .bee-block-4,
+			.bee-row-5 .bee-col-1 .bee-block-5,
 			.bee-row-7 .bee-col-1 .bee-block-2 {
 				padding: 20px 15px 5px !important;
 				text-align: center !important;
-				font-size: 16px !important
-			}
-
-			.bee-row-6 .bee-col-1 .bee-block-2 {
-				padding: 20px 20px 10px !important;
-				text-align: left !important;
 				font-size: 16px !important
 			}
 
@@ -439,6 +438,12 @@
 			.bee-row-8 .bee-col-3 .bee-block-2 {
 				padding: 10px 0 5px !important;
 				text-align: right !important
+			}
+
+			.bee-row-6 .bee-col-1 .bee-block-2 {
+				padding: 20px 20px 10px !important;
+				text-align: left !important;
+				font-size: 16px !important
 			}
 		}
 	</style>
@@ -505,11 +510,13 @@
 						<p>Firstly, I love all of my clients.</p>
 					</div>
 					<div class="bee-block bee-block-3 bee-paragraph">
-						<p>Every client is unique and represents a world of opportunity for me. This is why I dedicate myself to my clients success. </p>
-						<p>I depend on my clients just like they depend on me, and when we both commit to the project, I find tasks become easier to accomplish and all of our goals become clearer faster!</p>
+						<p>Every client is unique and represents a world of opportunity for me. This is why I dedicate myself to my clients' success wholeheartedly.</p>
 					</div>
 					<div class="bee-block bee-block-4 bee-paragraph">
-						<p>Below are some traits I REALLY value in clients, I work by these same principles and urge clients to truly OWN their role in the business relationship through these principles. Trust me, no-one is perfect but a bit of consideration does go a long way!</p>
+						<p>I depend on my clients just like they depend on me, and when we both commit to the project, I find tasks easier to accomplish and goals easier to achieve!</p>
+					</div>
+					<div class="bee-block bee-block-5 bee-paragraph">
+						<p>Below are some traits I REALLY value in clients. I work by these same principles and urge clients to truly OWN their role in the business relationship through these principles.</p>
 					</div>
 				</div>
 			</div>
@@ -521,13 +528,13 @@
 						<div class="spacer" style="height:50px;"></div>
 					</div>
 					<div class="bee-block bee-block-2 bee-paragraph">
-						<p><span style="background-color: #ffffff; color: #000000;"> Engaged: </span>  Interested in the betterment of the website and is actively engaged in the improvement of the website's content.</p>
-						<p><span style="color: #000000; background-color: #ffffff;"> Collaborative: </span>  Offering insights on or falls within, the website's target audience, and is likely to have a genuine interest in the products or services offered. Also, be able to collaborate with me the website developer, sharing ideas and providing feedback in a constructive manner.</p>
-						<p><span style="color: #000000; background-color: #ffffff;"> Responsive: </span>  Simply responding to communication in a timely manner that won't disrupt or hold up the process.</p>
-						<p><span style="color: #000000; background-color: #ffffff;"> Clear Communicator: </span>  Includes being responsive, available, and providing clear instructions and feedback.</p>
+						<p><span style="background-color: #ffffff; color: #000000;"> Engaged: </span>  Possesses an Interest in the betterment of the website and is actively engaged in the improvement of the website's content.</p>
+						<p><span style="color: #000000; background-color: #ffffff;"> Collaborative: </span>  Offers insights on or falls within the website's target audience. Possesses a genuine interest in the products or services offered. Able to collaborate with me as the website developer, sharing ideas and providing feedback in a constructive manner.</p>
+						<p><span style="color: #000000; background-color: #ffffff;"> Responsive: </span>  Communicates in a timely manner that won't disrupt or hold up the process.</p>
+						<p><span style="color: #000000; background-color: #ffffff;"> Clear Communicator: </span>  Provides clear instructions and feedback.</p>
 						<p><span style="color: #000000; background-color: #ffffff;"> Respectful: </span>  Values expertise and time. This includes paying on time, communicating professionally and acknowledging the effort and skills of the web developer.</p>
-						<p><span style="background-color: #ffffff; color: #000000;"> Realistic:</span><span style="color: #000000;"><span style="background-color: #ffffff;"> </span>  <span style="color: #ffffff;">Regarding</span></span> expectations, the website development process, and the results that can be achieved within the budget and timeline.</p>
-						<p><span style="background-color: #ffffff; color: #000000;"> Organized: </span>  Providing the necessary content and materials in a timely manner, allowing the website developer to meet the project's deadlines.<br /><span style="background-color: #ffffff; color: #000000;"> Open-minded: </span>  Open to new ideas and willing to take risks, allowing the web developer to be creative and deliver innovative solutions.</p>
+						<p><span style="background-color: #ffffff; color: #000000;"> Realistic:</span><span style="color: #000000;"><span style="background-color: #ffffff;"> </span>  <span style="color: #ffffff;">Regarding expectations, the website development process, and the results that can be achieved within the budget and timeline.<br /></span></span></p>
+						<p><span style="background-color: #ffffff; color: #000000;"> Organized: </span>  Provides the necessary content and materials in an orderly manner, enhancing the ability to meet project deadlines.<br /><span style="background-color: #ffffff; color: #000000;"> Open-minded: </span>  Open to new ideas and willing to take calculated risks that allow the web developer to be creative and deliver innovative solutions.</p>
 					</div>
 				</div>
 			</div>
@@ -539,9 +546,9 @@
 						<div class="spacer" style="height:50px;"></div>
 					</div>
 					<div class="bee-block bee-block-2 bee-paragraph">
-						<p>To conclude, the working relationship is after all, a relationship. The effort must be appreciated, collaboration should be welcomed and ultimately teamwork must be nurtured throughout the project. I trust in these attributes and deliver nothing but the best, if you share this feeling with me perhaps you are my next AMAZING client?!?!</p>
+						<p>The working relationship is after all, a relationship. Effort must be appreciated while collaboration should always be welcomed. I trust in these attributes and aspire to deliver nothing but my best.</p>
 						<p> </p>
-						<p>Click here to set up an appointment with me, let's get to work!</p>
+						<p>If you share this feeling with me, perhaps you will be my next AMAZING client?!?!</p>
 					</div>
 					<div class="bee-block bee-block-3 bee-spacer">
 						<div class="spacer" style="height:50px;"></div>
@@ -600,7 +607,8 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+	
 </body>
 
 </html>
